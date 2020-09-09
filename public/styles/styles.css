@@ -502,11 +502,11 @@ body {
 
     .skillcontainer {
         width: 80vw;
-        height: 320vh;
+        height: 340vh;
     }
 
     .container {
-        height: 320vh;
+        height: 440vh;
     }
 }
 
@@ -546,11 +546,11 @@ body {
 
     .skillcontainer {
         width: 80vw;
-        height: 320vh;
+        height: 340vh;
     }
 
     .container {
-        height: 430vh;
+        height: 440vh;
     }
 
 }
