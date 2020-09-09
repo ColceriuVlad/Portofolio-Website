@@ -1,0 +1,648 @@
+* {
+    font-family: 'Roboto', sans-serif;
+
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+
+}
+
+.about p {
+    color: black;
+    width: 100%;
+}
+
+.email {
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    padding: 1em;
+    font-size: 12px;
+    position: absolute;
+    transform: translateY(-6vh);
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.left {
+    animation: appear4 1s ease-in;
+}
+
+.right {
+    animation: appear5 1s ease-in;
+}
+
+.telephone {
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    font-size: 12px;
+    padding: 1em;
+    position: absolute;
+    transform: translateY(-6vh);
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.telephone.activated {
+    opacity: 1;
+}
+
+
+.footer i {
+    z-index: 3;
+    cursor: pointer;
+}
+
+.email.activated {
+    opacity: 1
+}
+
+i {
+    font-size: 33px;
+    margin-right: 20px;
+}
+
+.skills i {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.skilltitle:hover {
+    color: rgb(17, 16, 16)
+}
+
+.skilltitle {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+
+}
+
+.i-contain {
+    width: 80%;
+    height: 90%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individualskill {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    margin: auto;
+    box-shadow: 0 0 4px 0 azure;
+    border-radius: 10px;
+}
+
+.skills {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+}
+
+.skillsheader {
+    height: 5%;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 0 white;
+    border-radius: 10px;
+}
+
+.skillsheader:hover {
+    color: black;
+}
+
+.about .profile {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.about {
+    background-color: white;
+    box-shadow: 0 0 4px 0 azure;
+    height: 100%;
+    width: 23vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px 0 azure;
+}
+
+
+
+.about .contain {
+    width: 17.25vw;
+    position: fixed;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about .name {
+    color: gray;
+    font-size: 45px;
+    width: 100%;
+}
+
+.about .title {
+    width: 100%;
+    color: gray;
+    font-size: 30px;
+}
+
+.skillcontainer {
+    width: 55%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 4px 0 azure;
+    border-radius: 10px;
+}
+
+li:hover {
+    color: rgb(17, 16, 16)
+}
+
+.container {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 240vh;
+    width: 100%;
+    box-shadow: 0 0 4px 0 azure;
+}
+
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear3 1s ease-in;
+    z-index: 3;
+}
+
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    animation: appear 1s ease-in;
+
+}
+
+.header {
+    height: 5vh;
+    width: 100%;
+    background: gray;
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.footer {
+    height: 5vh;
+    background-color: gray;
+    box-shadow: 0 0 4px 0 azure;
+    transition: 0.5s ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.cinfo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20vh;
+    justify-content: space-around;
+}
+
+.footer i {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+
+}
+
+.cinfo>div {
+    font-size: 15px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer.activated {
+    height: 5vh;
+}
+
+
+
+
+.menu a:hover {
+    color: rgb(17, 16, 16);
+
+}
+
+.navbar {
+    height: 100%;
+    width: 60%;
+    animation: appear2 1s ease-in;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.menu a {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu i {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu .main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menubutton {
+    transition: 400ms ease-in;
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.line {
+    visibility: hidden;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 100%
+    }
+}
+
+
+
+@media screen and (min-width:1000px) {
+
+
+    .navbar {
+        box-shadow: 0 0 4px 0 azure;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    .menu a {
+        z-index: -2;
+    }
+
+    .about .contain {
+        width: 75%;
+        position: static;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menu a.mobile {
+        z-index: 2
+    }
+
+    .footer i {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .email {
+        font-size: 0.6rem;
+    }
+
+
+    .telephone {
+        font-size: 0.6rem;
+        width: 32vw;
+        margin-left: -5.7vw;
+    }
+
+    .about {
+        margin-top: 1.8vh;
+        width: 80vw;
+        height: 85vh;
+
+    }
+
+    .skillcontainer {
+        width: 80vw;
+    }
+
+    .individualskill {
+        width: 50%;
+        height: 25%;
+
+    }
+
+
+
+    .about .profile {
+        margin-left: 10%;
+        width: 80%
+    }
+
+    .footer {
+        height: 5vh;
+    }
+
+    .i-contain ul {
+        padding-left: 10px;
+    }
+
+    .about p {
+        font-size: 0.7rem;
+    }
+
+    .about .name {
+        font-size: 1.4em;
+    }
+
+    .about .title {
+        font-size: 1.2em;
+    }
+
+
+
+
+    .logo {
+        z-index: 10;
+        margin-left: -45vw;
+    }
+
+
+    .menubutton.mobile {
+        transform: rotate(360deg)
+    }
+
+    .line {
+        height: 3px;
+        margin: 0.3vh;
+        background-color: white;
+        width: 50%;
+        visibility: visible;
+    }
+
+    .menu {
+        opacity: 0;
+        position: fixed;
+        padding: 0px;
+        width: 97%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        display: flex;
+    }
+
+    .menu.mobile {
+        opacity: 1;
+        animation: blink 1s ease-in;
+        z-index: 3;
+    }
+
+
+    .menubutton {
+        z-index: 4;
+        margin-left: 45vw;
+        animation: appear2 1s ease-in;
+    }
+
+    .liskill {
+        font-size: 0.76em;
+        width: 100%
+    }
+
+    .skillsheader {
+        font-size: 1em;
+    }
+
+    .skilltitle {
+        font-size: 1em;
+    }
+
+
+
+    i {
+        font-size: 1em;
+    }
+
+    .skillcontainer {
+        width: 80vw;
+        height: 260vh;
+    }
+
+    .container {
+        height: 370vh;
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    .email {
+        font-size: 0.7em;
+    }
+
+    .header .logoline {
+        font-size: 0.8em;
+    }
+
+    .telephone {
+        font-size: 0.7em;
+    }
+
+    .header .menu a {
+        font-size: 0.8em;
+    }
+
+    .paragraphs .title {
+        font-size: 0.6em;
+    }
+
+    .paragraphs .content {
+        font-size: 0.5em;
+    }
+
+    .individualskill .skilltitle {
+        font-size: 0.87em;
+    }
+
+    .individualskill .liskill {
+        font-size: 0.6em;
+    }
+
+    .skillcontainer {
+        width: 80vw;
+        height: 260vh;
+    }
+
+    .container {
+        height: 370vh;
+    }
+
+}
+
+
+@media screen and (max-width:290px) {
+    .header .logoline {
+        font-size: 0.7em;
+    }
+
+    .individualskill .skilltitle {
+        font-size: 0.75em;
+    }
+
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+        height: 0vh;
+    }
+
+    to {
+        opacity: 1;
+        height: 50%;
+    }
+}
+
+
+
+@keyframes acolor {
+    from {
+
+        color: white;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+@keyframes appear3 {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes tskill {
+    from {
+        transform: translateX(600%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes appear4 {
+    from {
+        transform: translateX(-50vw)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes appear5 {
+    from {
+        transform: translateX(50vw)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}

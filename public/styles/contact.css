@@ -1,0 +1,167 @@
+.container-con{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    background-size: cover;
+    background-position-x: center;
+    box-shadow:0 0 4px 0 azure;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:85vh;
+}
+
+
+form div{
+    display:flex;
+    justify-content:center;
+    height:9.5vh;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+
+
+form div span{
+    font-size:1.5rem;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.info button{
+        outline:none;
+        border:none;
+        cursor:pointer;
+        border-radius:5px;
+        margin-bottom:1rem;
+        padding:0.5rem;
+        background-color:#5697b1;
+        width:60%;
+        border-radius:10px;
+        margin-left:auto;
+}
+
+.container-con form{
+    display:flex;
+    flex-direction:column;
+    padding:12vh 4vw;
+    box-shadow:0 0 4px 0 azure;
+    border-radius:5px;
+}
+
+form button{
+    margin-top:2vh;
+    width:40%;
+}
+
+.container-con button:hover{
+    background-color:#86b8cc
+}
+
+.container-con input{
+    padding:0.6vh 0;
+    margin:2vh 0;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    color:black;
+    width:20vw;
+    
+}
+
+
+
+@media screen and (max-width:1025px){
+    .container-con input{
+        width:100%;
+        z-index:2;
+    }
+
+    #resume{
+        z-index:2;
+    }
+
+    .info{
+        width:80vw;
+    }
+
+    form{
+        width:100%;
+        height:100%;
+    }
+
+    form input{
+        width:100%;
+        
+    }
+
+    .container-con form{
+        padding-top:2vh;
+    }
+
+    .info button{
+        font-size:1em;
+        width:75%
+        
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:375px){
+    .container-con{
+        height:95vh;
+    }
+
+    form div span{
+        font-size:0.85em
+    }
+
+    .info button{
+        font-size:0.8em;
+        width:75%
+        
+    }
+    .header .logo span {
+        font-size:0.8em;
+    }
+}
+
+@keyframes msgappear {
+    from{
+        color:white;
+    }
+    to{
+        color:black;
+    }
+}
+
+@media screen and (max-width:280px){
+    .header .logo span{
+        font-size:0.7em;
+    }
+    .header{
+        height:7vh;
+    }
+
+    .info button{
+        font-size:0.6em;
+    }
+
+    form div span{
+        font-size:0.7em
+    }
+
+    form label{
+        font-size:0.7em;
+    }
+
+}

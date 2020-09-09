@@ -1,0 +1,272 @@
+.pcontainer {
+
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 0 0 4px 0 azure;
+
+}
+
+
+.footer {
+    height: 5vh;
+}
+
+.slider {
+    height: 75vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    animation: slidein 420ms linear;
+    transition: 350ms linear
+}
+
+
+.paragraphs {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    justify-content: space-evenly;
+}
+
+
+
+
+.slider .content {
+    width: 70%;
+
+}
+
+.slider .technologies {
+    width: 70%;
+
+
+}
+
+.slider hr {
+    width: 70%;
+    margin-bottom: 2.5vh;
+}
+
+.slider .button {
+    width: 70%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider a {
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5697b1;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.slider a:hover {
+    background-color: #8cbacc;
+}
+
+.slider .title {
+    width: 70%;
+    font-size: 1.4em;
+    word-wrap: break-word;
+    margin-top: 8vh;
+}
+
+.photo {
+    width: 60%;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#photo1 {
+    background-image: url("../images/snake.png");
+    background-size: cover;
+}
+
+#photo2 {
+    background-image: url("../images/minesweeper.png");
+    background-size: cover;
+}
+
+#photo3 {
+    background-image: url("../images/calendar.png");
+    background-size: cover;
+}
+
+
+
+@media screen and (max-width:1800px) {
+
+    .slider .title {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    .slider a {
+        font-size: 0.8em;
+        width: 60%;
+    }
+
+
+    .slider .content {
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    .slider .technologies {
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    .slider hr {
+        width: 90%;
+    }
+
+    .slider .button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1026px) {
+    .slider {
+        width: 92vw;
+    }
+
+    .slider .title {
+        font-size: 1em;
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .slider .photo {
+        width: 100%;
+    }
+
+    .slider .technologies {
+        display: none;
+    }
+
+    .slider .paragraphs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .slider a {
+        font-size: 0.8em;
+        width: 60%;
+    }
+
+    .slider .paragraphs hr {
+        width: 90%;
+        margin-bottom: 4vh;
+    }
+
+    .slider .button {
+        width: 90%;
+    }
+
+
+    .slider .content {
+        font-size: 0.8em;
+        width: 90%;
+        margin: 3vh 0;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .header .logo span {
+        font-size: 0.85em;
+    }
+
+    .header {
+        height: 7vh;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .header .logo span {
+        font-size: 0.7em;
+    }
+
+
+
+    .slider .title {
+        font-size: 0.86em;
+    }
+
+    .slider .content {
+        font-size: 0.68em;
+    }
+
+    .slider a {
+        font-size: 0.68em;
+    }
+}
+
+
+.menu.mobile {
+    z-index: 3;
+}
+
+
+
+.slider-container {
+    margin-top: 0.5rem;
+    height: 75vh;
+    overflow: hidden;
+
+
+}
+
+.buttons {
+    margin-top: 1rem;
+    z-index: 2
+}
+
+.buttons input {
+    cursor: pointer;
+}
+
+
+.buttons button.selected {
+    background-color: black;
+    animation: onselect 1s ease-in;
+}
+
+
+
+
+
+@keyframes slidein {
+    from {
+        transform: translateX(-40vw)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
