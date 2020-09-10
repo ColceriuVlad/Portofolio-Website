@@ -388,6 +388,7 @@ body {
     .telephone {
         font-size: 0.6rem;
         margin-left: -37px;
+        color: red;
     }
 
     .about {
@@ -521,6 +522,7 @@ body {
 
     .telephone {
         font-size: 0.7em;
+        color: red;
     }
 
     .header .menu a {
