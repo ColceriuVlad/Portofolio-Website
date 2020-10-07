@@ -20,8 +20,7 @@ function tomobile() {
                 menuline[h].classList.add("mobile")
             }
 
-        }
-        else {
+        } else {
             menu.classList.remove("mobile")
             menubutton.classList.remove("mobile")
             for (let h = 0; h < menuline.length; h++) {
@@ -62,19 +61,6 @@ skillanims()
 
 
 
-
-findscroll = function () {
-    let express = document.querySelector("#neDB")
-
-
-    express.addEventListener("click", function () {
-        console.log(window.pageYOffset)
-    })
-}
-
-findscroll()
-
-
 //Email - Telephone
 function showcontact() {
     let item = document.querySelectorAll(".footer i")
@@ -100,5 +86,3 @@ function showcontact() {
 
 }
 showcontact()
-
-
